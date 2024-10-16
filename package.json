@@ -1,0 +1,25 @@
+{
+  "name": "lockedin",
+  "version": "1.0.0",
+  "description": "A tool for comparing resumes and job descriptions on LinkedIn using AI for free.",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "pnpm clean && parcel watch src/manifest.json",
+    "build": "pnpm clean && parcel build src/manifest.json"
+  },
+  "keywords": [
+    "LinkedIn",
+    "Resume",
+    "Job Description",
+    "AI",
+    "free"
+  ],
+  "author": "Alican Akyildiz",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.12.0",
+    "@parcel/transformer-yaml": "2.12.0",
+    "parcel": "^2.12.0",
+    "rimraf": "^6.0.1"
+  }
+}

@@ -1,0 +1,125 @@
+role: helpful assistant
+task: compare resume to job description
+inputs:
+  - resume
+  - job description
+
+output_format: HTML
+total_word_count: 250
+html_tags:
+  - h4
+  - h5
+  - p
+  - ul
+  - li
+  - strong
+
+styles:
+  p: 'style="font-size: 14px;"'
+  h4: 'style="font-weight: 500;"'
+  h5: 'style="font-weight: 500;"'
+  ul: 'style="margin-left: 40px;"'
+  li: 'style="margin-left: 20px;"'
+
+sections:
+  - name: Comparison
+    tag: h4
+    content:
+      - job suitability statement (20-30 words)
+      - resume analysis against job requirements
+      - overall match score (1-10)
+    subsections:
+      - name: Strengths
+        tag: h5
+        format: unordered list
+      - name: Areas for Improvement
+        tag: h5
+        format: unordered list
+    max_words: 100
+
+  - name: Key Skills
+    tag: h4
+    content:
+      - list and compare required skills
+      - skill match score (1-10)
+    format: unordered list
+
+  - name: Experience Level
+    tag: h4
+    content: compare required experience with candidate's experience
+    format: paragraph
+
+  - name: Industry Knowledge
+    tag: h4
+    content: assess industry-specific knowledge and certifications
+    format: paragraph
+
+  - name: Soft Skills
+    tag: h4
+    content: evaluate soft skills from job description vs. resume
+    format: unordered list
+
+  - name: ATS Keywords
+    tag: h4
+    content: list important missing keywords from job description
+    format: unordered list
+
+  - name: Conclusion
+    tag: h4
+    content:
+      - job suitability statement (50-75 words)
+      - 2-3 specific recommendations for improvement
+    format: paragraph
+
+guidelines:
+  - response should only be HTML
+  - use only specified HTML tags
+  - do not use container tags (div, section, body)
+  - ensure proper HTML formatting and nesting
+  - focus on actionable insights and clear comparisons
+  - do not specify language (e.g., ```html```)
+  - use <strong> tags for important words to emphasize
+  - replace any instances of **word** with <strong>word</strong> for emphasis
+  - apply the specified styles to each tag
+  - do not mention the sections in the response like **Comparison** etc.
+
+example_structure: |
+  <h4 style="font-weight: bold;">Comparison</h4>
+  <p style="font-size: 14px;">The candidate is <strong>moderately suitable</strong> for the position, with an overall match score of <strong>7/10</strong>. Their technical skills align well, but there's room for improvement in industry-specific experience.</p>
+  <h5 style="font-weight: bold;">Strengths</h5>
+  <ul style="margin-left: 40px;">
+    <li style="margin-left: 20px;">Strong programming skills in Python and JavaScript</li>
+    <li style="margin-left: 20px;">Relevant project management experience</li>
+  </ul>
+  <h5 style="font-weight: bold;">Areas for Improvement</h5>
+  <ul style="margin-left: 40px;">
+    <li style="margin-left: 20px;">Limited experience with cloud technologies</li>
+    <li style="margin-left: 20px;">Lack of specific industry certifications</li>
+  </ul>
+
+  <h4 style="font-weight: bold;">Key Skills</h4>
+  <ul style="margin-left: 40px;">
+    <li style="margin-left: 20px;">Python: Strong match</li>
+    <li style="margin-left: 20px;">Cloud computing: Needs improvement</li>
+  </ul>
+
+  <h4 style="font-weight: bold;">Experience Level</h4>
+  <p style="font-size: 14px;">The job requires 5+ years of experience; the candidate has 4 years, which is <strong>close but slightly under</strong> the requirement.</p>
+
+  <h4 style="font-weight: bold;">Industry Knowledge</h4>
+  <p style="font-size: 14px;">The candidate shows good general knowledge but lacks specific experience in <strong>fintech</strong>, which is crucial for this role.</p>
+
+  <h4 style="font-weight: bold;">Soft Skills</h4>
+  <ul style="margin-left: 40px;">
+    <li style="margin-left: 20px;">Communication: Strong evidence in resume</li>
+    <li style="margin-left: 20px;">Leadership: Limited examples provided</li>
+  </ul>
+
+  <h4 style="font-weight: bold;">ATS Keywords</h4>
+  <ul style="margin-left: 40px;">
+    <li style="margin-left: 20px;">Docker</li>
+    <li style="margin-left: 20px;">Agile methodologies</li>
+  </ul>
+
+  <h4 style="font-weight: bold;">Conclusion</h4>
+  <p style="font-size: 14px;">The candidate shows promise but needs some additional experience to be fully qualified. To improve their chances, they should: 1) Gain experience with cloud technologies, 2) Obtain relevant industry certifications, and 3) Highlight any fintech-related projects or knowledge in their resume.</p>
