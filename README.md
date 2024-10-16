@@ -109,7 +109,7 @@ You need to build this extension on your local machine to use.
 ### Development
 
 ```terminal
-git clone [repo URL]
+git clone https://github.com/whit3st/lockedin.git
 cd lockedin
 pnpm install
 pnpm start
