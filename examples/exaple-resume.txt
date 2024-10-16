@@ -1,0 +1,57 @@
+Name: John Doe
+Location: New York, USA
+Email: johndoe@example.com
+Phone: +1-555-555-5555
+Website: https://johndoe.dev
+
+Social Networks:
+
+LinkedIn: johndoe
+GitHub: johndoedev
+Introduction
+I graduated with a degree in computer science and specialize in frontend development with 2 years of experience. Skilled at developing dynamic web applications using Next.js, Astro, and Qwik. Currently exploring a variety of technologies to become a full-stack web developer. I work as a freelance developer on platforms like UpWork. Passionate about clean, efficient code and keeping up with modern web technologies. Looking for opportunities to grow and contribute to innovative projects in a collaborative environment.
+
+Education
+New York University
+
+Degree: BA in English Literature
+Dates: September 2016 - May 2018
+Highlights:
+Pivoted from a degree in English Literature to pursue a career in tech.
+Tech Academy
+
+Degree: AA in Software Development
+Dates: September 2021 - May 2023
+Highlights:
+Gained proficiency in JavaScript and React.
+Completed courses on Data Structures, Algorithms, and Web Development.
+Experience
+Company: UpWork
+
+Position: Frontend Developer
+Location: Remote
+Dates: May 2023 - Present
+Highlights:
+Delivered multiple projects to global clients with a focus on responsive, accessible web development.
+Worked closely with design and development teams to deliver seamless user experiences.
+Developed and maintained responsive web applications using the latest web technologies.
+Projects
+Project: CV Generator
+
+Date: GitHub
+Highlights:
+Created an automated CV and portfolio website generator, allowing users to pull LinkedIn data and generate personalized CVs or portfolio websites.
+Tools Used: Astro, React, Tailwind.
+Project: Custom CMS
+
+Date: GitHub
+Highlights:
+Built a custom CMS for Astro, allowing users to manage content directly on a single page without any installations. All content created with Astro is controlled via the CMS.
+Tools Used: Next.js, React, Tailwind, Octokit.
+Technologies
+HTML, CSS, JavaScript, TypeScript, React, Next.js, Astro, Tailwind, Git, GitHub, Firebase, Supabase, Vercel
+
+Languages
+English: Fluent
+Spanish: Intermediate
+French: Beginner
