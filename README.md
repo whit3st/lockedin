@@ -110,6 +110,10 @@ Some of those models have free API for testing and using. We are basically using
 
 ![screenshot of the LockedIn buttons](./screenshots/screenshot_1.png)
 
+### Example Usage
+
+![Example usage](./screenshots/example_usage.png)
+
 ### OpenRouter Menu
 
 ![OpenRouter menu](./screenshots/openrouter_dropdown.png)
