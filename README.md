@@ -10,8 +10,18 @@ Some of those models have free API for testing and using. We are basically using
 ## Requirements
 
 1. OpenRouter API key.
-2. A resume in text format (_see `examples`_).
+    - Click here and [sign up](https://openrouter.ai).
+    - From top right corner, hover your profile picture and click **Keys**. (_see [screenshot](#openrouter-menu) below_)
+    - Click **Create Key** button, give your key a name and click **Create**.
+    - Save your key somewhere.
+2. A resume in text format (_see `/examples`_).
+    - You can use ChatGPT or Claude to convert your resume to text.
+    - If you are using RenderCV like me, you can use your data in config YAML file. `/examples/example-resume.yaml` is a RenderCV example and `/examples/exaple-resume.txt` is the text version of it.
 3. A LLM model name from OpenRouter.
+    - Go to [OpenRouter Browse Models](https://openrouter.ai/models?order=pricing-low-to-high) page.
+    - If you look closer, you will see some models have free APIs.
+    - Select a model and click copy icon right next to its name. (_see [screenshot](#openrouter-model-name) below_)  
+      _Free limit: If you are using a free model variant (with an ID ending in :free), then you will be limited to 20 requests per minute and 200 requests per day._ [Learn more](https://openrouter.ai/docs/limits)
 
 ## Installation
 
@@ -89,13 +99,24 @@ Some of those models have free API for testing and using. We are basically using
 ## Usage
 
 1. Go to any job posting on LinkedIn
-2. You will see two buttons next to **Apply** and **Save** called **Compare with LockedIn** and **Reset Data**. (_See screnshot section_)
+2. You will see two buttons next to **Apply** and **Save** called **Compare with LockedIn** and **Reset Data**. (_See [screnshot](#lockedin-buttons) section_)
 3. You can add or change your data or see your current data. (_Like your API key or your selected LLM model_)
-4. Click **Compare with LockedIn** button, after few seconds, you will see your comparison.
+4. You need to add your data first. Click **Reset Data** button. You will be asked your API key, resume in text format and your OpenRouter model name. Fill the inputs accordingly.
+5. Once you are done, click **Compare with LockedIn** button, after few seconds, you will see your comparison.
 
-## Screenshot
+## Screenshots
+
+### LockedIn Buttons
 
 ![screenshot of the LockedIn buttons](./screenshots/screenshot_1.png)
+
+### OpenRouter Menu
+
+![OpenRouter menu](./screenshots/openrouter_dropdown.png)
+
+### OpenRouter Model Name
+
+![OpenRouter model name](./screenshots/openrouter_modelname.png)
 
 ## Development
 
@@ -123,4 +144,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
 
-[Email](alican15033@gmail.com)
+[Email](mailto:alican15033@gmail.com)
